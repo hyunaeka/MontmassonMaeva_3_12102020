@@ -1,0 +1,19 @@
+{
+  "name": "montmassonmaeva_3_12102020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./Sass/Main.scss:./CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyunaeka/MontmassonMaeva_3_12102020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyunaeka/MontmassonMaeva_3_12102020/issues"
+  },
+  "homepage": "https://github.com/hyunaeka/MontmassonMaeva_3_12102020#readme"
+}
