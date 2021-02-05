@@ -1,11 +1,31 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
 }
 
 a {
   text-decoration: none;
   color: #000;
+}
+
+.restaurant_name h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.logo-head {
+  height: 4em;
+  display: flex;
+}
+.logo-head img {
+  margin: auto;
+  width: 11em;
+}
+
+.search {
+  background-color: gainsboro;
+}
+
+.presentation {
+  background-color: #F5F5F5;
 }
 
 /*# sourceMappingURL=style.css.map */
