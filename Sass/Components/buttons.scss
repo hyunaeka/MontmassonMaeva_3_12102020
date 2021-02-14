@@ -1,0 +1,9 @@
+.btn{
+
+@include btn-aesthetic;
+@include box-shadow;
+
+  &:hover {
+      @include btn-hover;
+  }
+}

@@ -1,0 +1,143 @@
+.la_palette_du_gout{
+    height: 20em;
+    position: relative;
+  
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+      }
+        }
+
+.le_delice_des_sens{
+    height: 20em;
+    position: relative;
+  
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+      }
+        }
+
+.la_note_enchante{
+    height: 20em;
+    position: relative;
+  
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+      }
+}
+
+.a_la_française{
+    height: 20em;
+    position: relative;
+  
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+      }
+}
+
+
+.restaurant_name{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    
+    h2{
+        font-weight: 200;
+        font-size: 1.7em;
+    }
+}
+
+.choose-meal {
+    background-color: darken($gray, 1%);
+    border-top-left-radius: 2.5em;
+    border-top-right-radius: 2.5em;
+    margin-top: -5em;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+
+        margin-bottom: 1.5em;
+        font-weight: 400;
+        color: #5c5656;
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: $color-tertiary ;
+            width: 2.1em;
+            height: 0.2em;
+            margin-top: 0.5em;
+            
+        }
+    }
+    .menu {
+
+        margin: 0.5em;
+
+        p{
+            margin: 0;
+        }
+    }
+}
+
+    .meal { 
+    background-color: white;
+    border-radius: 1em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    box-shadow: 8px 8px 8px #d9d9d9;
+    overflow: hidden;
+             
+        &__content {
+            padding-left: 1em;
+            width: 40%;
+
+        }
+
+        &__title {
+            font-weight: 800;
+            font-size: 1.2em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        &__description {
+            font-weight: 400;
+            font-size: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+.order {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-top: 1em;
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+}

@@ -1,0 +1,62 @@
+
+.explanation {
+
+        padding: 45px 20px 50px;
+
+         h2{
+             margin-bottom: 2em;
+         }
+}
+
+
+.step{
+    display: flex;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    margin-bottom: 1em;
+
+    &__number{
+        display: flex;
+        z-index: 2;
+        width: 2em;
+        height: 1.8em;
+        border-radius: 1rem;
+        background-color: $color-primary;
+        color: $white;
+       
+        
+            span{
+                display: flex;
+                margin: auto;
+            }
+    }
+
+    &__text{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        left: -13px;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 1.2rem;
+        position: relative;
+        background-color: lighten($dark-gray, 4%);
+        @include box-shadow;
+        i{
+            display: flex;
+            width: 21px;
+            margin: 0 25px 0 30px;
+            color: gray;
+            font-size: 1.2rem;
+        }
+        &:hover{
+            background-color: lighten($color-primary, 35%);
+            i{
+                color: $color-primary;
+            }
+        }
+    }
+
+}

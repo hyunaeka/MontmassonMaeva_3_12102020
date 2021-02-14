@@ -1,0 +1,66 @@
+.restaurants {
+    background-color: $dark-gray;
+    padding: 1em;
+
+    .restaurants-content { 
+        padding: 1em;
+    }
+}
+
+.resto-article {
+    background-color: white;
+    height: 250px;
+    margin-bottom: 2em;
+    border-radius: 1em 1em 1em 1em;
+    
+    
+
+
+
+
+
+    
+
+    &__img{
+        height: 70%;
+        overflow: hidden;
+        border-radius: 1em 1em 0em 0em;
+        position: relative;
+        img {
+            
+            width: 100%;
+            object-fit: cover;
+            }
+
+        .new {
+            background-color: #99E2D0;
+            color: #008000;
+            top: 1em;
+            right: 1em;
+            padding: 0.5em;
+            font-size: 0.8em;
+            border-radius: 0.2em;
+            position: absolute;
+        }
+
+        }
+    &__content{
+        display: flex;
+        height: 30%;
+        background-color: $white;
+        border-radius: 1em 1em 1em 1em;
+
+        .article-text{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding-left: 1em;
+            padding-top: 1em;
+
+            p{
+                margin: 0.2em;              
+                margin-left: 0;
+            }
+    }
+}
+}
