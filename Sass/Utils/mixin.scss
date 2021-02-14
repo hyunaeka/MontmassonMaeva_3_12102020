@@ -1,0 +1,28 @@
+@mixin btn-aesthetic{
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    padding: 1em; 
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    color: $white;
+    background: linear-gradient(170deg, $color-secondary, lighten($color-primary, 10%));
+}
+
+@mixin box-shadow{
+    box-shadow: 0 3px 8px rgb(163, 161, 161);
+}
+
+@mixin btn-hover{
+
+    background: linear-gradient(170deg, lighten($color-secondary, 5%), lighten($color-primary, 10%));
+    box-shadow: 0 3px 8px rgb(97, 95, 95);;
+    transform: scale(1.01);
+}
+
+@mixin breakpointTab {
+    
+    
+}
+
