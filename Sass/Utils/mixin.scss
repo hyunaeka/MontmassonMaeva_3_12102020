@@ -7,7 +7,7 @@
     font-weight: 500;
     border-radius: 1.5rem;
     color: $white;
-    background: linear-gradient(170deg, $color-secondary, lighten($color-primary, 10%));
+    background: linear-gradient(160deg, $color-secondary, lighten($color-primary, 10%));
 }
 
 @mixin box-shadow{
@@ -16,13 +16,15 @@
 
 @mixin btn-hover{
 
-    background: linear-gradient(170deg, lighten($color-secondary, 5%), lighten($color-primary, 10%));
+    background: linear-gradient(160deg, lighten($color-secondary, 10%), lighten($color-primary, 10%));
     box-shadow: 0 3px 8px rgb(97, 95, 95);;
-    transform: scale(1.01);
-}
-
-@mixin breakpointTab {
-    
+    transform: scale(0.9);
+    transition: transform 600ms, background-color 100ms ease-out;
     
 }
 
+@mixin breakpoints($min-device) {
+    @media screen and (min-width: map-get($breakpoints-map, $min-device)){
+        @content;
+    }
+}

@@ -4,3 +4,13 @@ $color-tertiary: #99E2D0;
 $gray: #F5F5F5;
 $dark-gray: darken($gray, 5%);
 $white: #fff;
+
+
+$meal-num: 4;
+$anim-dur: 3s;
+$anim-delay: 2500ms / $meal-num;
+
+$breakpoints-map:(
+    tablet: 600px,
+    desktop: 1024px
+);

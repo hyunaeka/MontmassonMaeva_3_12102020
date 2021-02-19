@@ -55,6 +55,17 @@
         font-weight: 200;
         font-size: 1.7em;
     }
+    @include breakpoints(tablet){
+        
+        justify-content: center;
+
+        .far {
+
+            font-size: 1.4em;
+
+        }
+
+    }
 }
 
 .choose-meal {
@@ -66,6 +77,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    @include breakpoints(tablet){
+    
+    }
 
     h3 {
 
@@ -90,6 +105,11 @@
         p{
             margin: 0;
         }
+
+        @include breakpoints(desktop){
+            width: 30%;
+        
+        }
     }
 }
 
@@ -102,11 +122,21 @@
     margin-bottom: 1em;
     box-shadow: 8px 8px 8px #d9d9d9;
     overflow: hidden;
+    justify-content: space-between;
+    transition: transform 350ms 50ms linear;
+    animation: slide $anim-dur;
+    position: relative;
+    @for $i from 1 through $meal-num {
+        &--#{$i} {
+            animation: slide $anim-delay * $i forwards;
+         }
+    }
              
         &__content {
             padding-left: 1em;
-            width: 40%;
-
+            width: 70%;
+            transition: transform 350ms 500ms forwards;
+            
         }
 
         &__title {
@@ -123,8 +153,67 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+
         }
+
+        .price {
+            padding-bottom: 1em;
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            transform-origin: right;
+            transition: transform 350ms 50ms linear;
+
     }
+
+
+
+    .anim_check {
+        background-color: $color-tertiary;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        transition: transform 400ms 50ms linear;
+        transform-origin: right;
+        transform: scaleX(0);     
+            .anim_icon {
+
+                color: $white;
+                font-size: 1.5em;
+                transform: rotate(0deg);
+                transition: transform 350ms 50ms linear;
+
+            }
+
+        }
+
+            
+    &:hover .anim_check {
+
+        transform: scaleX(1);
+
+    }       
+
+    &:hover .anim_icon{
+        transform: rotate(360deg);
+                            }
+
+    &:hover .price{        
+                    transform: translateX(-70px);
+                        
+                    }
+    
+    &:hover .meal__content {
+                     width: 50%
+
+                    }
+    
+    }
+
+
+
 
 .order {
     display: flex;
@@ -140,4 +229,15 @@
         padding-right: 3em;
         padding-left: 3em;
     }
+}
+
+.menu-section {
+
+    @include breakpoints(desktop){
+        
+    display: flex;
+    justify-content: space-around;
+    
+    }
+
 }

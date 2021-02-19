@@ -5,6 +5,39 @@
     .restaurants-content { 
         padding: 1em;
     }
+
+    @include breakpoints(tablet){
+
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
+
+#restaurant-title {
+
+    @include breakpoints(tablet){
+
+        margin: 1em;
+
+    }
+
+}
+
+
+.restaurants-content {
+
+    @include breakpoints(tablet){
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
 }
 
 .resto-article {
@@ -12,14 +45,20 @@
     height: 250px;
     margin-bottom: 2em;
     border-radius: 1em 1em 1em 1em;
-    
-    
+
+    @include breakpoints(tablet){
+
+        width: 48%;
+        font-size: 0.9em;
 
 
+    }
 
+    @include breakpoints(desktop){
 
+        width: 24%;
 
-    
+    }
 
     &__img{
         height: 70%;
@@ -50,6 +89,7 @@
         background-color: $white;
         border-radius: 1em 1em 1em 1em;
 
+
         .article-text{
             display: flex;
             flex: 1;
@@ -63,4 +103,37 @@
             }
     }
 }
+}
+
+
+.heartempty {
+    padding: 1em;
+    position: relative;
+    transition: color 150ms 50ms ease;
+    transform: scale(1);
+
+        &:hover{
+
+            transform: scale(1.3);
+            transition: transform 650ms 50ms ease-out;
+            color: $color-tertiary;
+            
+        }
+        &:hover > .heartfull{
+            transform: scale(1);
+            transform-origin: 55% bottom;
+        }
+
+}
+
+.heartfull {
+
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: #ee82ee;
+    transform: scale(0);
+    transition: transform 900ms 50ms ease-out;
+
+
 }
