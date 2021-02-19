@@ -98,13 +98,16 @@ a {
 }
 @keyframes slide {
   0% {
-    transform: translateY(50px);
+    transform: translateY(60px);
     opacity: 0;
   }
   25% {
     opacity: 0;
   }
   50% {
+    opacity: 0;
+  }
+  70% {
     opacity: 0.1;
   }
   100% {
@@ -284,8 +287,8 @@ footer a i {
   box-shadow: 8px 8px 8px #d9d9d9;
   overflow: hidden;
   justify-content: space-between;
-  transition: transform 350ms 50ms linear;
-  animation: slide 3s;
+  transition: transform 350ms 300ms linear;
+  animation: slide 4s 1.5s;
   position: relative;
 }
 .meal--1 {
@@ -303,7 +306,6 @@ footer a i {
 .meal__content {
   padding-left: 1em;
   width: 70%;
-  transition: transform 350ms 500ms forwards;
 }
 .meal__title {
   font-weight: 800;
