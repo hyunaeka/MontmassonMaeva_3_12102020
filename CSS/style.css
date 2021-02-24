@@ -293,15 +293,19 @@ footer a i {
 }
 .meal--1 {
   animation: slide 625ms forwards;
+  cursor: pointer;
 }
 .meal--2 {
   animation: slide 1250ms forwards;
+  cursor: pointer;
 }
 .meal--3 {
   animation: slide 1875ms forwards;
+  cursor: pointer;
 }
 .meal--4 {
   animation: slide 2500ms forwards;
+  cursor: pointer;
 }
 .meal__content {
   padding-left: 1em;

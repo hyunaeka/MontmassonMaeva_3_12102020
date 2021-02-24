@@ -129,6 +129,7 @@
     @for $i from 1 through $meal-num {
         &--#{$i} {
             animation: slide $anim-delay * $i forwards;
+            cursor: pointer;
          }
     }
              
